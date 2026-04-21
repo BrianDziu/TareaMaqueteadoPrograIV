@@ -1,0 +1,19 @@
+:root {
+    --primary: #000000;
+    --secondary: #FFFFFF;
+    --accent: #FF5E5B;
+    --accent2: #FFE156;
+    --shadow: 8px 8px 0px var(--primary);
+    --font: 'Courier New', monospace;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font);
+}
+
+body {
+    background-color: var(--secondary);
+}

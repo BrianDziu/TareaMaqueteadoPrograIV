@@ -1,0 +1,41 @@
+<div class="page-wrapper">
+    <div class="registro-container">
+        <h1>CREAR CUENTA</h1>
+        <p class="subtitle">Completá tus datos para comenzar</p>
+
+        <form (ngSubmit)="onSubmit()">
+            <div class="input-group">
+                <label for="nombre">NOMBRE</label>
+                <input type="text" id="nombre" placeholder="Ingresa tu nombre" [(ngModel)]="nombre" name="nombre"
+                    required />
+            </div>
+
+            <div class="input-group">
+                <label for="email">EMAIL</label>
+                <input type="email" id="email" placeholder="Ingresa tu email" [(ngModel)]="email" name="email"
+                    required />
+            </div>
+
+            <div class="form-row">
+                <div class="input-group">
+                    <label for="password">CONTRASEÑA</label>
+                    <input type="password" id="password" placeholder="••••••••" [(ngModel)]="password" name="password"
+                        required />
+                </div>
+
+                <div class="input-group">
+                    <label for="confirmar">CONFIRMAR CONTRASEÑA</label>
+                    <input type="password" id="confirmar" placeholder="••••••••" [(ngModel)]="confirmar"
+                        name="confirmar" required />
+                </div>
+            </div>
+
+            <button type="submit">REGISTRARME</button>
+        </form>
+
+        <div class="footer">
+            ¿Ya tenés cuenta?
+            <a routerLink="/login">Iniciá sesión</a>
+        </div>
+    </div>
+</div>
